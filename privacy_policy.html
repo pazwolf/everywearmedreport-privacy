@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מדיניות פרטיות — EveryWearMedReport</title>
+  <meta name="description" content="מדיניות הפרטיות של אפליקציית EveryWearMedReport לדיווח רפואי שטח.">
+  <style>
+    :root {
+      --primary: #0f6e56;
+      --primary-dark: #085041;
+      --bg: #f1f5f9;
+      --text: #0f172a;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    header p { font-size: 14px; opacity: 0.85; }
+    main {
+      max-width: 780px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+    section {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+    p { margin-bottom: 10px; color: var(--text); }
+    ul { padding-right: 20px; margin-bottom: 10px; }
+    ul li { margin-bottom: 6px; }
+    .badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 99px;
+      margin-bottom: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    a { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>מדיניות פרטיות</h1>
+  <p>EveryWearMedReport — אפליקציה לדיווח רפואי שטח</p>
+  <p style="margin-top:8px; font-size:13px;">עדכון אחרון: יולי 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <span class="badge">כללי</span>
+    <h2>מבוא</h2>
+    <p>אפליקציית <strong>EveryWearMedReport</strong> פותחה לצורך תיעוד רפואי שטחי על ידי אנשי רפואה מוסמכים. מדיניות פרטיות זו מסבירה אילו נתונים האפליקציה אוספת, כיצד הם מאוחסנים ומשמשים, ומהן זכויותיכם.</p>
+    <p>השימוש באפליקציה מהווה הסכמה למדיניות זו.</p>
+  </section>
+
+  <section>
+    <span class="badge">נתונים</span>
+    <h2>אילו נתונים נאספים?</h2>
+    <p>האפליקציה עשויה לאסוף ולטפל בסוגי המידע הבאים:</p>
+    <ul>
+      <li><strong>נתונים רפואיים של מטופלים</strong> — שם, גיל, תעודת זהות, תאריך לידה, נתוני חיוניות, היסטוריה רפואית, אבחנות, טיפולים והתערבויות. כל אלה מוזנים ידנית על ידי המשתמש.</li>
+      <li><strong>תמונות</strong> — תמונות מצולמות הקשורות למטופל (אם המשתמש בוחר לצלם).</li>
+      <li><strong>מיקום גיאוגרפי</strong> — אם ניתנת הרשאה, המיקום הנוכחי עשוי להיכלל בדוח.</li>
+      <li><strong>פרטי התחברות</strong> — כתובת מייל וסיסמה מוצפנת לצורך אימות דרך Firebase Authentication.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="badge">שמירה</span>
+    <h2>היכן מאוחסנים הנתונים?</h2>
+    <ul>
+      <li><strong>דוחות PDF</strong> — נשמרים מקומית במכשיר בלבד, בתיקייה <code>Documents/MedicalReports</code>. אינם מועלים לענן.</li>
+      <li><strong>גיבויים</strong> — קובצי JSON עם נתוני ההשלמה האוטומטית נשמרים מקומית בתיקייה <code>Documents/MedicalReports/snippets_backups</code>.</li>
+      <li><strong>חשבון משתמש</strong> — פרטי ההתחברות מנוהלים על ידי <strong>Google Firebase Authentication</strong> ומאוחסנים בשרתי Google בהתאם למדיניות הפרטיות של Firebase (<a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>).</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="badge">שיתוף</span>
+    <h2>האם נתונים משותפים עם צדדים שלישיים?</h2>
+    <p>האפליקציה <strong>אינה מוכרת, אינה מסחרת ואינה מעבירה</strong> מידע רפואי לצדדים שלישיים.</p>
+    <p>השיתוף היחיד האפשרי הוא:</p>
+    <ul>
+      <li><strong>שליחת דוח במייל</strong> — הדוח מוצפן (AES-256) ונשלח ישירות מאפליקציית המייל של המשתמש לנמען שנבחר. האפליקציה אינה שולחת מיילים בעצמה.</li>
+      <li><strong>Google Firebase</strong> — לצורך אימות זהות המשתמש בלבד.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="badge">אבטחה</span>
+    <h2>כיצד המידע מאובטח?</h2>
+    <ul>
+      <li>דוחות PDF מוצפנים בהצפנת <strong>AES-256</strong> לפני שיתוף.</li>
+      <li>סיסמת ה-PDF מבוססת על תעודת הזהות ותאריך הלידה של המטופל — ידועה רק לגורמים הרפואיים המורשים.</li>
+      <li>כל הנתונים הרפואיים נשמרים <strong>מקומית בלבד</strong> — ללא גישת רשת לדוחות עצמם.</li>
+      <li>חיבורי הרשת של האפליקציה מוגבלים לאימות Firebase ב-HTTPS בלבד.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="badge">הרשאות</span>
+    <h2>הרשאות המכשיר</h2>
+    <p>האפליקציה מבקשת את ההרשאות הבאות:</p>
+    <ul>
+      <li><strong>מצלמה</strong> — לצילום תמונות הקשורות למטופל.</li>
+      <li><strong>אחסון</strong> — לשמירת דוחות PDF וגיבויים במכשיר.</li>
+      <li><strong>מיקום</strong> — לצירוף מיקום גיאוגרפי לדוח (אופציונלי).</li>
+      <li><strong>גישה לאינטרנט</strong> — לאימות Firebase בלבד.</li>
+    </ul>
+    <p>ניתן לבטל הרשאות בכל עת דרך הגדרות המכשיר.</p>
+  </section>
+
+  <section>
+    <span class="badge">זכויות</span>
+    <h2>זכויותיכם</h2>
+    <ul>
+      <li>הזכות לגשת, לתקן ולמחוק נתוני חשבון — דרך הגדרות האפליקציה.</li>
+      <li>הזכות למחוק דוחות ונתונים מהמכשיר בכל עת.</li>
+      <li>הזכות לבטל הרשאות מכשיר בכל עת.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="badge">קצינים</span>
+    <h2>גיל המשתמשים</h2>
+    <p>האפליקציה מיועדת לאנשי רפואה בוגרים בלבד. אין שימוש מכוון בנתוני ילדים מתחת לגיל 18.</p>
+  </section>
+
+  <section>
+    <span class="badge">עדכונים</span>
+    <h2>שינויים במדיניות</h2>
+    <p>מדיניות פרטיות זו עשויה להתעדכן מעת לעת. שינויים מהותיים יפורסמו בדף זה עם תאריך עדכון מעודכן.</p>
+  </section>
+
+  <section>
+    <span class="badge">צור קשר</span>
+    <h2>יצירת קשר</h2>
+    <p>לשאלות בנוגע לפרטיות ניתן לפנות אלינו:</p>
+    <p>📧 <strong>everywearmedreport@gmail.com</strong></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 EveryWearMedReport. כל הזכויות שמורות.</p>
+</footer>
+
+</body>
+</html>
