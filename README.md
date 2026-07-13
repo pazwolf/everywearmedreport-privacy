@@ -1,0 +1,1 @@
+# everywearmedreport-privacy
